@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Stepan Avdevic](https://up.htmlacademy.ru/htmlcss/22/user/570493).
-* Наставник: `Неизвестно`.
+* Наставник: [Nobody].
 
 ---
 
