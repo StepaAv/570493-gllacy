@@ -6,6 +6,7 @@
   <title>HTML Academy: Глейси</title>
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -18,10 +19,10 @@
         <nav class="main-nav">
           <a href="#" class="main-nav__logo-link"><img src="img/logo.png" alt="Logotip Gllacy" class="main-nav__logo-img"></a>
           <ul class="main-nav__list-link">
-            <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">Каталог</a>
+            <li class="main-nav__item"><a class="main-nav__item-link main-nav__item-link--catalog" href="catalog.html">Каталог</a>
               <ul class="main-nav__list-small">
-                <li class="main-nav__item-small main-nav__item-small--current"><a href="#" class="main-nav__link-small main-nav__link-small--current">Новинки</a></li>
-                <li class="main-nav__item-small"><a href="#" class="main-nav__link-small">Сливочное</a></li>
+                <li class="main-nav__item-small"><a href="#" class="main-nav__link-small">Новинки</a></li>
+                <li class="main-nav__item-small"><a href="#" class="main-nav__link-small main-nav__link-small--active">Сливочное</a></li>
                 <li class="main-nav__item-small"><a href="#" class="main-nav__link-small">Щербеты</a></li>
                 <li class="main-nav__item-small"><a href="#" class="main-nav__link-small">Фруктовый лед</a></li>
                 <li class="main-nav__item-small"><a href="#" class="main-nav__link-small">Мелорин</a></li>
@@ -50,7 +51,7 @@
                 </div>
               </div>
             </li>
-            <li class="main-nav__item-shop">
+            <li class="main-nav__item-shop main-nav__item-shop--basket">
               <button class="main-nav__shadow-btn" type="button">Пусто</button>
             </li>
           </ul>
@@ -186,10 +187,18 @@
       <div class="container container--footer">
         <div class="social">
           <ul class="social__list">
-            <li class="social__item">TW</li>
-            <li class="social__item">INS</li>
-            <li class="social__item">FB</li>
-            <li class="social__item">VK</li>
+            <li class="social__item"><a href="https://www.twitter.com" class="social__link social__link--twitter" aria-label="twitter">
+                <p class="visually-hidden">Twitter</p>
+              </a></li>
+            <li class="social__item"><a href="https://www.instagram.com" class="social__link social__link--instagram" aria-label="instagram">
+                <p class="visually-hidden">Instagram</p>
+              </a></li>
+            <li class="social__item"> <a href="https://www.facebook.com" class="social__link social__link--facebook" aria-label="facebook">
+                <p class="visually-hidden">Facebook</p>
+              </a></li>
+            <li class="social__item"><a href="https://www.vkontakte.com" class="social__link social__link--vkontakte" aria-label="vkontakte">
+                <p class="visually-hidden">Vkontakte</p>
+              </a></li>
           </ul>
         </div>
         <div class="support">
