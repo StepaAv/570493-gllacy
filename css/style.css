@@ -95,7 +95,7 @@ a {
   padding: 0;
   list-style-type: none;
   position: absolute;
-  
+
   width: 140px;
   box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
@@ -495,6 +495,29 @@ a {
   position: relative;
   z-index: 20;
 }
+.sales-hit__item:hover > .sales-hit__item/*://////////////////////////////////////////////////*/ {
+  content: "Быстрый просмотр";
+  display: inline-block;
+  margin-left: 15px;
+  padding: 12px 35px;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+  color: #ffffff;
+  vertical-align: top;
+  text-decoration: none;
+  text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
+
+  background: #f26843;
+  background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
+  border-radius: 50px;
+  box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
+  border: none;
+
+  cursor: pointer;
+  position: absolute;
+}
 
 .sales-hit__item:hover {
   border-radius: 5px;
@@ -771,6 +794,18 @@ display: inline-block;
 width: 38px;
 height: 38px;
 }
+
+.support__link {
+  color: inherit;
+}
+
+.support__link:hover {
+  color: orange;
+}
+
+.copyright__link {
+  color: inherit;
+}
 /*wwwwwwwwwwwww
 wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww
 wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
@@ -906,7 +941,11 @@ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
   flex-direction: row;
   flex-wrap: wrap;
 }
-
+.sort-tools {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 .sort-tools__list {
   padding: 0;
   list-style-type: none;
@@ -916,8 +955,71 @@ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
   font-size: 14px;
   line-height: 16px;
   font-weight: 500;
+  /*margin-bottom: 0;*/
+}
+.sort-tools__range--two {
+  display: none;
+}
+.sort-tools__item--fat {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
+.sort-tools__item--fat input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.sort-tools__radio-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/radio-off.png);
+  background-repeat: no-repeat;
+}
+.sort-tools__item--fat:hover input ~ .sort-tools__radio-pic {
+  background-image: url(../img/radio-off-hover.png);
+}
+.sort-tools__item--fat input:checked ~ .sort-tools__radio-pic {
+  background-image: url(../img/radio-on.png);
+}
+.sort-tools__item--fill {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sort-tools__item--fill input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+.sort-tools__checkbox-pic {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-image: url(../img/checkbox-off.png);
+  background-repeat: no-repeat;
+}
+.sort-tools__item--fill:hover input ~ .sort-tools__checkbox-pic {
+  background-image: url(../img/checkbox-off-hover.png);
+}
+.sort-tools__item--fill input:checked ~ .sort-tools__checkbox-pic {
+  background-image: url(../img/checkbox-on.png);
+}
 .sort-tools__wrap--popular {
   width: 193px;
 }
@@ -1090,24 +1192,75 @@ wwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwww*/
   display: none;
 }
 
-.pages-links__list {
+.pagination__list {
   padding: 0;
   list-style-type: none;
   display: flex;
   justify-content: flex-end;
 }
 
-.pages-links__link {
+.pagination__link {
   color: inherit;
+  width: 20px;
+  display: block;
+  text-align: center;
 }
-
-input[type="radio"] {
-  display: none;
-}
-
-.sort-tools__label--radio {
-  width: 12px;
-  height: 12px;
+.pagination__link:hover {
+  background-color: rgb(255, 255, 255, 0.2);
   border-radius: 50%;
-  border: 3px solid white;
 }
+.pagination__item:first-child > .pagination__link {
+  color: rgb(255, 255, 255, 0.2);
+}
+
+
+.pagination__link--current {
+  background-color: #ffffff;
+  border-radius: 50%;
+  text-align: center;
+  color: #323232;
+}
+
+/*WWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWWW*/
+
+.sort-tools__range-controls {
+  position: relative;
+  width: 180px;
+  height: 30px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255, 0.2);
+}
+
+.sort-tools__range-controls .sort-tools__scale {
+  height: 4px;
+  /*background: rgba(255, 255, 255, 0.3);*/
+  padding-top: 12px;
+}
+
+.sort-tools__range-controls .sort-tools__bar {
+  width: 80%;
+  height: 4px;
+  background: #ffffff;
+}
+
+.sort-tools__range-toggle {
+  position: absolute;
+  top: 4px;
+
+  width: 4px;
+  height: 4px;
+
+  background: #ffffff;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+.sort-tools__range-toggle--min {
+  left: 0;
+}
+.sort-tools__range-toggle--max {
+  left: 80%;
+}
+
+
