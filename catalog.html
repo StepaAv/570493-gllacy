@@ -6,6 +6,7 @@
     <title>Catalog</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
 </head>
 
 <body>
@@ -13,7 +14,7 @@
         <header class="main-header">
             <nav class="main-nav">
                 <a href="index.html" class="main-nav__logo-link"><img src="img/logo.png" alt="Logotip Gllacy" class="main-nav__logo-img"></a>
-                <ul class="main-nav__list-link">
+                <ul class="main-nav__list-link main-nav__list-link--catalog">
                     <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__item-link main-nav__item-link--catalog" href="catalog.html">Каталог</a>
                         <ul class="main-nav__list-small">
                             <li class="main-nav__item-small"><a href="#" class="main-nav__link-small main-nav__link-small--special">Новинки</a></li>
@@ -27,7 +28,7 @@
                     </li>
                     <li class="main-nav__item"><a class="main-nav__item-link" href="catalog.html">О Компании</a></li>
                 </ul>
-                <ul class="main-nav__list-shop">
+                <ul class="main-nav__list-shop main-nav__list-shop--catalog">
                     <li class="main-nav__item-shop main-nav__item-shop--search">
                         <button class="main-nav__shadow-btn" type="button">
                         </button>
@@ -81,22 +82,22 @@
         </header>
         <main class="main-page main-page--catalog">
             <section class="breadcrumbps">
-                <div class="container">
+                
                     <ul class="breadcrumbs__list">
                         <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Главная</a></li>
                         <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link">Каталог</a></li>
                         <li class="breadcrumbs__item"><a href="" class="breadcrumbs__link breadcrumbs__link--active">Сливочное</a></li>
                     </ul>
                     <h1 class="breadcrumbs__icecream">Сливочное мороженое</h1>
-                </div>
+                
             </section>
             <section class="form">
-                <div class="container container--sort">
+                
                     <form method="post" action="https://echo.htmlacademy.ru" class="sort-tools">
                         <div class="sort-tools__wrap sort-tools__wrap--popular">
                             <p class="sort-tools__title">Сортировка:</p>
                             <ul class="sort-tools__list sort-tools__list--popular">
-                                <li class="sort-tools__item sort-tools__item--popular">по популярности
+                                <li class="sort-tools__item sort-tools__item--popular"><p>по популярности</p>
                                     <ul class="sort-tools__list-small">
                                         <li class="sort-tools__item-small"><a href="#" class="sort-tools__link-small">по популярности</a></li>
                                         <li class="sort-tools__item-small"><a href="#" class="sort-tools__link-small">сначала недорогие</a></li>
@@ -116,7 +117,7 @@
                                 <div class="sort-tools__range-toggle sort-tools__range-toggle--max"></div>
                             </div>
                         </div>
-                </div>
+                
                 <div class="sort-tools__wrap sort-tools__wrap--fat">
                     <p class="sort-tools__title">Жирность:</p>
                     <ul class="sort-tools__list sort-tools__list--fat">
@@ -151,46 +152,48 @@
                     </ul>
                 </div>
                 <div class="sort-tools__wrap sort-tools__wrap--fill">
-                    <p class="sort-tools__title">Наполнители:</p>
+                    <p class="sort-tools__title sort-tools__title--fill">Наполнители:</p>
                     <ul class="sort-tools__list sort-tools__list--fill">
                         <li class="sort-tools__item sort-tools__item--fill">
                             <label class="sort-tools__checkbox-label">
-                                <input type="checkbox" name="fill" value="choco" class="sort-tools__checkbox">
+                                <input type="checkbox" name="fill" value="choco" class="sort-tools__checkbox" checked="">
                                 <span class="sort-tools__checkbox-pic"></span>
-                                <p class="sort-tools__text">шоколадные</p>
+                                <p class="sort-tools__text sort-tools__text--jam">шоколадные</p>
                             </label>
                         </li>
                         <li class="sort-tools__item sort-tools__item--fill">
                             <label class="sort-tools__checkbox-label">
-                                <input type="checkbox" name="fill" value="sugar" class="sort-tools__checkbox">
+                                <input type="checkbox" name="fill" value="sugar" class="sort-tools__checkbox" checked="">
                                 <span class="sort-tools__checkbox-pic"></span>
-                                <p class="sort-tools__text">сахарные присыпки</p>
+                                <p class="sort-tools__text sort-tools__text--jam">сахарные присыпки</p>
                             </label>
                         </li>
                         <li class="sort-tools__item sort-tools__item--fill">
                             <label class="sort-tools__checkbox-label">
                                 <input type="checkbox" name="fill" value="fruits" class="sort-tools__checkbox">
                                 <span class="sort-tools__checkbox-pic"></span>
-                                <p class="sort-tools__text">фрукты</p>
+                                <p class="sort-tools__text sort-tools__text--jam">фрукты</p>
                             </label>
                         </li>
                         <li class="sort-tools__item sort-tools__item--fill">
                             <label class="sort-tools__checkbox-label">
                                 <input type="checkbox" name="fill" value="syrp" class="sort-tools__checkbox">
                                 <span class="sort-tools__checkbox-pic"></span>
-                                <p class="sort-tools__text">сиропы</p>
+                                <p class="sort-tools__text sort-tools__text--jam">сиропы</p>
                             </label>
                         </li>
                         <li class="sort-tools__item sort-tools__item--fill">
                             <label class="sort-tools__checkbox-label">
                                 <input type="checkbox" name="fill" value="jam" class="sort-tools__checkbox">
                                 <span class="sort-tools__checkbox-pic"></span>
-                                <p class="sort-tools__text">джемы</p>
+                                <p class="sort-tools__text sort-tools__text--jam">джемы</p>
                             </label>
                         </li>
                     </ul>
                 </div>
-                <button type="button" class="sort-tools__btn">Применить</button>
+                <div class="sort-tools__btn-wrap">
+                    <button type="submit" class="sort-tools__btn">Применить</button>
+                </div>
                 </form>
     </div>
     </section>
