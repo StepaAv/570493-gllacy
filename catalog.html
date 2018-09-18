@@ -17,7 +17,7 @@
             <nav class="main-nav">
                 <a href="index.html" class="main-nav__logo-link"><img src="img/logo.png" alt="Logotip Gllacy" class="main-nav__logo-img" width="154" height="64"></a>
                 <ul class="main-nav__list-link main-nav__list-link--catalog">
-                    <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__item-link main-nav__item-link--catalog" href="catalog.html">Каталог</a>
+                    <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__item-link" href="catalog.html">Каталог</a>
                         <ul class="main-nav__list-small">
                             <li class="main-nav__item-small"><a href="#" class="main-nav__link-small main-nav__link-small--special">Новинки</a></li>
                             <li class="main-nav__item-small main-nav__item-small--current"><a href="#" class="main-nav__link-small main-nav__link-small--current">Сливочное</a></li>
@@ -99,7 +99,7 @@
                             <p class="sort-tools__title">Сортировка:</p>
                             <ul class="sort-tools__list sort-tools__list--popular">
                                 <li class="sort-tools__item sort-tools__item--popular">
-                                    <p>по популярности</p>
+                                    <p class="sort-tools__popular-text">по популярности</p>
                                     <ul class="sort-tools__list-small">
                                         <li class="sort-tools__item-small"><a href="#" class="sort-tools__link-small">по популярности</a></li>
                                         <li class="sort-tools__item-small"><a href="#" class="sort-tools__link-small">сначала недорогие</a></li>
@@ -124,17 +124,17 @@
                             <ul class="sort-tools__list sort-tools__list--fat">
                                 <li class="sort-tools__item sort-tools__item--fat">
                                     <input type="radio" name="fat" value="0" class="sort-tools__radio-input" id="zero-fat">
-                                    <!-- <span class="sort-tools__radio-pic"></span> -->
+                                    <span class="sort-tools__radio-pic"></span>
                                     <label for="zero-fat" class="sort-tools__text sort-tools__text--fat">0%</label>
                                 </li>
                                 <li class="sort-tools__item sort-tools__item--fat">
-                                    <input type="radio" name="fat" value="10 or less" class="sort-tools__radio-input" id="ten-fat">
-                                    <!-- <span class="sort-tools__radio-pic"></span> -->
+                                    <input type="radio" name="fat" value="10 or less" class="sort-tools__radio-input" id="ten-fat" checked>
+                                    <span class="sort-tools__radio-pic"></span>
                                     <label for="ten-fat" class="sort-tools__text sort-tools__text--fat">До 10%</label>
                                 </li>
                                 <li class="sort-tools__item sort-tools__item--fat">
                                     <input type="radio" name="fat" value="30 or less" class="sort-tools__radio-input" id="thirty-fat">
-                                    <!-- <span class="sort-tools__radio-pic"></span> -->
+                                    <span class="sort-tools__radio-pic"></span>
                                     <label for="thirty-fat" class="sort-tools__text sort-tools__text--fat">До 30%</label>
                                 </li>
                                 <li class="sort-tools__item sort-tools__item--fat">
@@ -180,9 +180,9 @@
                     </form>
                 </section>
             </div>
-  
+
     <section class="results">
-        <div class="container">
+        <!-- <div class="container"> -->
             <ul class="results__list">
                 <li class="results__item">
                     <a href="#" class="results__link"><img src="img/310.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой" width="267" height="267" class="results__img"></a>
@@ -282,7 +282,8 @@
                 </li>
             </ul>
 
-            <div class="pagination results__pages">
+          <div class="container">
+              <div class="pagination results__pages">
                 <ul class="pagination__list">
                     <li class="pagination__item">
                         <a href="#" class="pagination__link"></a>
@@ -295,7 +296,8 @@
                     <li class="pagination__item"><a href="#" class="pagination__link">></a></li>
                 </ul>
             </div>
-        </div>
+          </div>
+        <!-- </div> -->
     </section>
     </main>
     <footer class="main-footer main-footer--catalog">
@@ -338,7 +340,7 @@
             </div>
         </div>
     </footer>
-     
+
 </body>
 
 </html>
