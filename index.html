@@ -63,9 +63,8 @@
                     <p class="time-phone__time">С 10 до 20, ежедневно</p>
                     <a href="tel:88124502525" class="time-phone__phone">8 812 450-25-25</a>
                 </div>
-                </header>
-                </div>
-
+            </header>
+        </div>
         <main class="main-page main-page--index">
             <h1 class="visually-hidden ">Glaccy</h1>
             <div class="container container--twoice">
@@ -235,60 +234,18 @@
                 </div>
             </div>
         </footer>
-        <section class="modal modal--login">
-          <p class="modal__text">Мы обязательно вам ответим!</p>
-          <button class="modal__close">Закрыть</button>
-          <form action="https://echo.htmlacademy.ru" class="login-form" method="post">
-            <input type="text" name="name" class="modal__input modal__input--name" placeholder="Как вас зовут?">
-            <input type="email" name="email" class="modal__input modal__input--mail" placeholder="Ваша почта для ответа?" >
-            <textarea class="modal__textarea" name="write something"   placeholder="Напишите что-нибудь..."></textarea>
-              <button class="modal__submit" type="submit">Отправить</button>
-          </form>
-</section>
+        <section class="modal">
+            <p class="modal__text">Мы обязательно вам ответим!</p>
+            <button class="modal__close">Закрыть</button>
+            <form action="https://echo.htmlacademy.ru" class="modal__form" method="post">
+                <input type="text" name="name" class="modal__input modal__input--name" placeholder="Как вас зовут?">
+                <input type="email" name="email" class="modal__input modal__input--mail" placeholder="Ваша почта для ответа?">
+                <textarea class="modal__textarea" name="write something" placeholder="Напишите что-нибудь..."></textarea>
+                <button class="modal__submit" type="submit">Отправить</button>
+            </form>
+        </section>
     </div>
-
-    <script>
-      var link = document.querySelector(".contacts__btn");
-
-      var popup = document.querySelector(".modal--login");
-      var close = popup.querySelector(".modal__close");
-
-      var form = popup.querySelector("form");
-      var text = popup.querySelector("[name=text]");
-      var email = popup.querySelector("[name=email]");
-
-      var isStorageSupport = true;
-  var storage = "";
-  
-  try {
-    storage = localStorage.getItem("login");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-
-      link.addEventListener("click", function (evt) {
-        evt.preventDefault();
-        popup.classList.add("modal--show");
-        login.focus();
-
-  });
-
-      close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal--show");
-  });
-
-      form.addEventListener("submit", function (evt) {
-    if (!text.value || !email.value) {
-      evt.preventDefault();
-      console.log("Нужно ввести логин и пароль");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
-      }
-    }
-  });
-    </script>
+    <script src="js/popup.js"></script>
 </body>
 
 </html>
