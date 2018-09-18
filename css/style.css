@@ -101,6 +101,7 @@ a {
     margin: 0;
     padding: 0;
     list-style-type: none;
+    list-style: none;
     position: absolute;
 
     width: 140px;
@@ -187,7 +188,7 @@ a {
     padding-top: 8px;
     height: 22px;
     border-radius: 35px;
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: #aabcb2;
     position: relative;
 }
 
@@ -277,7 +278,9 @@ a {
     display: block;
     margin-left: 45px;
 }
-
+.main-nav__shadow-btn--search {
+  font-size: 0;
+}
 .main-nav__hover-search {
     width: 345px;
     height: 82px;
@@ -519,13 +522,23 @@ a {
 .gifts__cranberry {
     width: 560px;
     min-height: 230px;
-    background-image: url(../img/malinafon.png);
+    border-radius: 12px;
+    background-color: #c37991;
+    background-image: url(../img/good-cranberry.jpg);
+    background-clip: border-box;
+    background-origin: padding-box;
+    background-attachment: scroll;
 }
 
 .gifts__chocolate {
     width: 560px;
     min-height: 230px;
-    background-image: url(../img/chocofon.png);
+    border-radius: 12px;
+    background-color: #7c5b55;
+    background-image: url(../img/good-choco.jpg);
+    background-origin: padding-box;
+    background-clip: border-box;
+    background-attachment: scroll;
 }
 
 .gifts__title {
@@ -609,6 +622,7 @@ a {
     display: none;
     width: 280px;
     border-radius: 0 0 5px 5px;
+    background-color: #abbcb2;
     background-color: rgb(248, 247, 244, 0.2);
 }
 
@@ -618,6 +632,7 @@ a {
 }
 
 .sales-hit__item:hover {
+    background-color: #abbcb2;
     background-color: rgb(248, 247, 244, 0.2);
 }
 
@@ -834,6 +849,9 @@ a {
     height: 40px;
     margin-top: 37px;
     margin-left: 15px;
+    border-radius: 5px;
+    border: 1px solid;
+    border-color: rgb(211, 211, 210);
 }
 
 .subscribe__mail::-webkit-input-placeholder {
@@ -886,6 +904,7 @@ a {
     border-radius: 50px;
     box-shadow: 0 2px 2px rgba(172, 16, 0, 0.64);
     cursor: pointer;
+    margin-left: 5px;
 }
 
 .map {
@@ -1138,9 +1157,11 @@ a {
     width: 375px;
 }
 .main-nav__item--catalog {
-  background-color: orange;
+  background-color: #d07058;
 }
-
+.main-nav__item-link--catalog {
+  text-decoration: none;
+}
 
 .shop-wrap {
     position: absolute;
@@ -1291,7 +1312,7 @@ a {
     text-decoration: underline;
 }
 
-.breadcrumbs__link:first-child:after {
+.breadcrumbs__link--arrow:after {
     content: "»";
     position: absolute;
     right: 4px;
@@ -1314,7 +1335,7 @@ a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-top: 15px;
-    width: 853px;
+    width: 858px;
 }
 
 .sort-tools__list {
@@ -1340,7 +1361,7 @@ a {
     font-size: 14px;
     line-height: 16px;
     font-weight: 500;
-    padding-left: 15px;
+    padding-left: 13px;
     margin-bottom: 7px;
 }
 
@@ -1360,7 +1381,7 @@ a {
     height: 33px;
     /*left: 10px;*/
     border-radius: 15px;
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: #aabcb2;
 }
 
 .sort-tools__range-controls .sort-tools__scale {
@@ -1414,6 +1435,14 @@ a {
 .sort-tools__item--fill:first-child .sort-tools__checkbox-pic {
   margin-left: 10px;
   margin-right: 5px;
+}
+.sort-tools__item--fill:nth-child(2) .sort-tools__checkbox-pic {
+  margin-left: 5px;
+  /*margin-right: 5px;*/
+}
+.sort-tools__item--fill:first-child .sort-tools__text--jam {
+  margin-left: 30px;
+  /*margin-right: 5px;*/
 }
 .sort-tools__radio-pic {
     margin-left: -5px;
@@ -1530,6 +1559,7 @@ a {
     justify-content: space-around;
     margin-top: 0;
     height: 33px;
+    width: 405px;
 }
 
 .sort-tools__wrap--fill {
@@ -1543,14 +1573,18 @@ a {
     justify-content: space-around;
     margin-top: 5px;
     height: 34px;
+    /*margin-right: 20px;*/
 }
 
 .sort-tools__btn {
     width: 145px;
+  /*  margin-left: 20px;
+    display: block;*/
 }
 
 .sort-tools__btn-wrap {
     margin-top: 24px;
+    margin-left: 2px;
 }
 
 .sort-tools__list {
@@ -1628,6 +1662,7 @@ a {
 .sort-tools__btn {
     border: none;
     margin: 0;
+    /*margin-left: 6px;*/
     padding: 0;
     width: auto;
     overflow: visible;
@@ -1641,7 +1676,7 @@ a {
     font-size: 16px;
     line-height: 18px;
     font-weight: 500;
-    background-color: rgb(248, 247, 244, 0.2)
+    background-color: #aabcb2;
 }
 
 .sort-tools__btn:hover {
@@ -1668,12 +1703,12 @@ a {
 }
 
 .results__item {
-  padding-top: 5px;
+   padding-top: 5px;
     width: 280px;
-    /*height: 350 px;*/
     min-height: 362px;
     position: relative;
     border-radius: 5px 5px 0 0;
+    /*background-color: grey;*/
 }
 .results__img {
   display: block;
@@ -1692,21 +1727,19 @@ a {
     width: 280px;
     /*margin-left: 20px;*/
     border-radius: 0 0 5px 5px;
+    background-color: #abbcb2;
     background-color: rgb(248, 247, 244, 0.2);
 }
-.results__btn {
-  /*margin-left: 20px;*/
+.results__item:hover {
+    /*border-radius: 5px 5px 0 0;*/
+    background-color: #abbcb2;
+    background-color: rgb(248, 247, 244, 0.2);
 }
 
 .results__item:hover>.results__btn-wrap {
     display: block;
     position: absolute;
     bottom: -58px;
-}
-
-.results__item:hover {
-    border-radius: 5px;
-    background-color: rgb(248, 247, 244, 0.2);
 }
 
 .results__price {
@@ -1735,10 +1768,7 @@ a {
     line-height: 45px;
 }
 
-.results__item:hover {
-    border-radius: 5px;
-    background-color: rgb(248, 247, 244, 0.2);
-}
+
 
 
 .results__btn {
@@ -1755,7 +1785,6 @@ a {
     vertical-align: top;
     text-decoration: none;
     text-shadow: 0 2px 5px rgba(160, 32, 11, 0.76);
-
     background: #f26843;
     background: linear-gradient(to bottom, #f26843 0%, #e74a35 100%);
     border-radius: 50px;
@@ -1795,7 +1824,8 @@ a {
 
 
 .pagination__link:hover {
-    background-color: rgb(255, 255, 255, 0.2);
+    background-color: #abbcb2;
+    background-color: rgb(248, 247, 244, 0.2);
     border-radius: 50%;
 }
 
@@ -1991,9 +2021,4 @@ a {
 }
 
 /*EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEe*/
-/*.sales-hit__item {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 290px;
-}*/
+
