@@ -91,7 +91,7 @@ a {
 .main-nav__list-small {
     display: none;
     position: absolute;
-    top: 60px;
+    top: 55px;
     z-index: 20;
     margin: 0;
     padding: 0;
@@ -102,7 +102,7 @@ a {
     box-shadow: 0px 20px 20px 0px rgba(0, 0, 0, 0.4);
 }
 
-.main-nav__item-link--catalog:hover~.main-nav__list-small {
+.main-nav__item:first-child:hover>.main-nav__list-small {
     display: block;
 }
 
@@ -126,13 +126,15 @@ a {
     background-color: #f8f7f4;
     padding-top: 10px;
     padding-left: 10px;
+    height: 25px;
 }
-
 .main-nav__link-small--current {
     font-weight: 700;
     color: #ffffff;
 }
-
+.main-nav__item-small--special {
+  border-bottom: 1px solid #323232;
+}
 .main-nav__link-small--special {
     font-weight: 700;
 }
@@ -268,8 +270,10 @@ a {
     height: 82px;
     background-color: #f8f7f4;
     border-radius: 10px;
-    position: relative;
+    position: absolute;
     z-index: 22;
+    top: 31px;
+    right: 0px;
     display: none;
 }
 
@@ -293,7 +297,7 @@ a {
     height: 214px;
     position: absolute;
     left: -185px;
-    top: 35px;
+    top: 31px;
     background-color: white;
     border-radius: 10px;
     background-color: #f8f7f4;
@@ -314,6 +318,7 @@ a {
 
 .login__submit {
     display: inline-block;
+    vertical-align: middle;
     padding: 12px 35px;
     font-weight: 600;
     font-size: 18px;
@@ -330,12 +335,15 @@ a {
     border: none;
     cursor: pointer;
     margin-top: 15px;
+    /*width: 100px;*/
 }
 
 .login__registration-wrap {
     display: inline-block;
+    vertical-align: middle;
     background-color: #f8f7f4;
     margin-top: 15px;
+    margin-left: 10px;
 }
 
 .login__additional {
@@ -343,7 +351,8 @@ a {
     text-align: left;
     padding-top: 5px;
     color: #323232;
-    border-bottom: 0.2px solid #323232;
+    text-decoration: underline;
+    text-decoration-color:  #323232;
 }
 
 .time-phone {
@@ -372,6 +381,7 @@ a {
 
 .adv-slider__button {
     display: inline-block;
+    vertical-align: middle;
     padding: 12px 44px;
     font-weight: 600;
     font-size: 31px;
@@ -414,6 +424,7 @@ a {
 
 .adv-slider__controls label {
     display: inline-block;
+    vertical-align: middle;
     width: 17px;
     height: 17px;
     margin-right: 8px;
@@ -605,6 +616,7 @@ a {
 
 .sales-hit__btn {
     display: inline-block;
+    vertical-align: middle;
     margin-left: 15px;
     padding: 12px 35px;
     font-weight: 600;
@@ -830,6 +842,7 @@ a {
     height: 40px;
     padding: 5px 10px;
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -916,6 +929,7 @@ a {
     font-weight: 700;
     border-radius: 30px;
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -1015,6 +1029,7 @@ a {
     background-image: url(../img/tw.png);
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     width: 38px;
     height: 38px;
 }
@@ -1024,6 +1039,7 @@ a {
     background-image: url(../img/ins.png);
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     width: 38px;
     height: 38px;
 }
@@ -1033,6 +1049,7 @@ a {
     background-image: url(../img/fb.png);
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     width: 38px;
     height: 38px;
 }
@@ -1042,6 +1059,7 @@ a {
     background-image: url(../img/vk.png);
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     width: 38px;
     height: 38px;
 }
@@ -1144,6 +1162,7 @@ a {
 
 .shop-wrap__cancel {
     display: inline-block;
+    vertical-align: middle;
     border: none;
     margin: 0;
     padding: 0;
@@ -1160,6 +1179,7 @@ a {
 
 .shop-wrap__logo--yellow {
     display: inline-block;
+    vertical-align: middle;
     background-image: url(../img/small1.png);
     background-repeat: no-repeat;
     width: 40px;
@@ -1168,6 +1188,7 @@ a {
 
 .shop-wrap__logo--purple {
     display: inline-block;
+    vertical-align: middle;
     background-image: url(../img/small2.png);
     background-repeat: no-repeat;
     width: 40px;
@@ -1176,6 +1197,7 @@ a {
 
 .shop-wrap__text {
     display: inline-block;
+    vertical-align: middle;
     width: 230px;
     margin: 0;
     font-size: 13px;
@@ -1185,12 +1207,14 @@ a {
 
 .shop-wrap__count {
     display: inline-block;
+    vertical-align: middle;
     font-size: 13px;
     line-height: 16px;
 }
 
 .shop-wrap__price {
     display: inline-block;
+    vertical-align: middle;
     font-size: 13px;
     line-height: 16px;
 }
@@ -1213,6 +1237,7 @@ a {
     font-weight: 700;
     border-radius: 30px;
     display: inline-block;
+    vertical-align: middle;
     text-align: center;
     color: #ffffff;
     text-decoration: none;
@@ -1661,6 +1686,7 @@ a {
 
 .results__btn {
     display: inline-block;
+    vertical-align: middle;
     margin-left: 15px;
     padding: 12px 35px;
     font-weight: 600;
