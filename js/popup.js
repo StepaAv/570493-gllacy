@@ -1,4 +1,4 @@
-var link = document.querySelector(".contacts__btn");
+    var link = document.querySelector(".contacts__btn");
 
     var popup = document.querySelector(".modal");
     var close = popup.querySelector(".modal__close");
@@ -6,7 +6,7 @@ var link = document.querySelector(".contacts__btn");
     var form = popup.querySelector("form");
     var namez = popup.querySelector("[name=name]");
     var email = popup.querySelector("[name=email]");
-    var area = popup.querySelector(".modal__textarea");
+    var area = popup.querySelector("textarea");
 
     var isStorageSupport = true;
     var storage = "";
@@ -40,8 +40,8 @@ var link = document.querySelector(".contacts__btn");
     form.addEventListener("submit", function(evt) {
         if (!namez.value || !email.value || !area.value) {
             evt.preventDefault();
-            popup.classlassList.remove("modal--error");
-            popup.offsetWidth = popup.offsetWidth;
+            // popup.classlassList.remove("modal--error");
+            // popup.offsetWidth = popup.offsetWidth;
             popup.classList.add("modal--error");
             console.log("Нужно ввести name и email и message");
         } else {
