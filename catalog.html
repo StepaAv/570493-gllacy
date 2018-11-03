@@ -5,14 +5,14 @@
     <meta charset="UTF-8">
     <title>Catalog</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style-min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
     <div class="ccontainer">
         <header class="main-header">
             <nav class="main-nav">
-                <a href="index.html" class="main-nav__logo-link"><img src="img/logo.png" alt="Logotip Gllacy" class="main-nav__logo-img" width="154" height="64"></a>
+                <a href="index.html" class="main-nav__logo-link"><img src="img/Logotip.png" alt="Logotip Gllacy" class="main-nav__logo-img" width="154" height="64"></a>
                 <ul class="main-nav__list-link main-nav__list-link--catalog">
                     <li class="main-nav__item main-nav__item--catalog"><a class="main-nav__item-link main-nav__item-link--catalog" href="catalog.html">Каталог</a>
                         <ul class="main-nav__list-small">
@@ -94,7 +94,6 @@
                 <form method="post" action="https://echo.htmlacademy.ru" class="sort-tools">
                     <div class="sort-tools__wrap sort-tools__wrap--popular">
                         <p class="sort-tools__title">Сортировка:</p>
-                        <!-- nadejus menia ne spaliat -->
                         <div class="sort-tools__popular-wrap">
                             <select class="sort-tools__list sort-tools__list--popular" name="sort-by" id="sort">
                                 <option value="popular">по популярности</option>
@@ -134,7 +133,6 @@
                             </li>
                             <li class="sort-tools__item sort-tools__item--fat">
                                 <input type="radio" name="fat" value="30 and more" class="sort-tools__radio-input" id="max-fat">
-                                <!-- <span class="sort-tools__radio-pic"></span> -->
                                 <label for="max-fat" class="sort-tools__text sort-tools__text--fat">Выше 30%</label>
                             </li>
                         </ul>
@@ -144,27 +142,22 @@
                         <ul class="sort-tools__list sort-tools__list--fill">
                             <li class="sort-tools__item sort-tools__item--fill">
                                 <input type="checkbox" name="fill" value="choco" class="sort-tools__checkbox" checked="" id="choco">
-                                <!-- <span class="sort-tools__checkbox-pic"></span> -->
                                 <label for="choco" class="sort-tools__text sort-tools__text--jam">шоколадные</label>
                             </li>
                             <li class="sort-tools__item sort-tools__item--fill">
                                 <input type="checkbox" name="fill" value="sugar" class="sort-tools__checkbox" checked="" id="sugar">
-                                <!-- <span class="sort-tools__checkbox-pic"></span> -->
                                 <label for="sugar" class="sort-tools__text sort-tools__text--jam">сахарные присыпки</label>
                             </li>
                             <li class="sort-tools__item sort-tools__item--fill">
                                 <input type="checkbox" name="fill" value="fruits" class="sort-tools__checkbox" id="fruits">
-                                <!-- <span class="sort-tools__checkbox-pic"></span> -->
                                 <label for="fruits" class="sort-tools__text sort-tools__text--jam">фрукты</label>
                             </li>
                             <li class="sort-tools__item sort-tools__item--fill">
                                 <input type="checkbox" name="fill" value="syrp" class="sort-tools__checkbox" id="syrp">
-                                <!-- <span class="sort-tools__checkbox-pic"></span> -->
-                                <label class="sort-tools__text sort-tools__text--jam">сиропы</label>
+                                <label for="syrp" class="sort-tools__text sort-tools__text--jam">сиропы</label>
                             </li>
                             <li class="sort-tools__item sort-tools__item--fill">
                                 <input type="checkbox" name="fill" value="jam" class="sort-tools__checkbox" id="jam">
-                                <!-- <span class="sort-tools__checkbox-pic"></span> -->
                                 <label for="jam" class="sort-tools__text sort-tools__text--jam">джемы</label>
                             </li>
                         </ul>

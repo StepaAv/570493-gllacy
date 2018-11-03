@@ -1384,7 +1384,7 @@ a {
     padding-left: 10px;
     width: 190px;
     font-size: 16px;
-    /*position: relative;*/
+    position: relative;
 }
 
 .sort-tools__list--popular:hover {
@@ -1392,15 +1392,18 @@ a {
     color: #323232;
 }
 
+.sort-tools__popular-wrap {
+    position: relative; 
+}
+
 .sort-tools__popular-wrap:after {
     content: "";
     width: 25px;
     height: 25px;
     border-radius: 50px;
-    bottom: 385px;
-    left: 220px;
+    bottom: 4px;
+    right: 4px;
     background-color: #aabcb2;
-    /*background-color: red;*/
     position: absolute;
     z-index: 3000;
 }
@@ -1418,8 +1421,8 @@ a {
     width: 17px;
     height: 17px;
     z-index: 4000;
-    top: 221px;
-    left: 226px;
+    top: 13px;
+    left: 169px;
 }
 
 .sort-tools__popular-wrap:hover:before {
@@ -1976,6 +1979,9 @@ a {
     margin-top: 30px;
 }
 
+.social__link:hover {
+    opacity: 0.4;
+}
 
 /*WWWWWWWWWWWWWWWWW M O D A L WWWWWWWWWWWWWWWWWWWWWWWWWW*/
 
